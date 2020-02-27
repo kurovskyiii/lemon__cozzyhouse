@@ -43,11 +43,23 @@
     background-position: 15% 50%;
 
     &__wrap {
-      min-height: calc(100vh - 120px);
+      min-height: calc(100vh - 80px);
     }
 
     &__caption {
       font-size: 35px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    &__caption {
+      font-size: 28px;
+    }
+
+    &__descr {
+      font-size: 14px;
     }
   }
 }
