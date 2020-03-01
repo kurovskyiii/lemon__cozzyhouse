@@ -3,7 +3,7 @@
   <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>@@title</title>
+  <title>CozyHouse - Pets</title>
   <meta name="theme-color" content="#fff" />
   <meta
     name="apple-mobile-web-app-status-bar-style"
@@ -94,34 +94,61 @@
 </head>
 
   <body>
-    <style>
-      .row-template {
-        margin-bottom: 20px 0;
-      }
-    </style>
-
-    <div class="wrapper">
-      <div class="container">
-        <div class="row-template">
-          <input type="text" placeholder="Enter text" />
+    <header class="header header--white-bg">
+  <div class="container">
+    <div class="header__wrap">
+      <div class="header__logo">
+        <a href="#" class="header__logo-link">
+          <span class="header__logo-title">Cozy House</span>
+          <span class="header__logo-text">Shelter for pets in Boston</span>
+        </a>
+      </div>
+      <div class="header__nav">
+        <div class="header__nav-inner">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#">About the shelter</a>
+            </li>
+            <li class="header__nav-item current"><a href="#">Our pets</a></li>
+            <li class="header__nav-item">
+              <a href="#">To help the shelter</a>
+            </li>
+            <li class="header__nav-item"><a href="#">Contacts</a></li>
+          </ul>
         </div>
-        <div class="row-template">
-          <label class="checkbox">
-            <input type="checkbox" />
-            <span>I'm checkbox</span>
-          </label>
-        </div>
-        <div class="row-template">
-          <label class="checkbox">
-            <input type="checkbox" checked />
-            <span>I'm checkbox</span>
-          </label>
-        </div>
-        <button class="btn btn--border">BTN</button>
+      </div>
+      <div class="header__btn-menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
+  </div>
+</header>
 
-    
+    <div class="pagination">
+  <div class="container">
+    <ul class="pagination__list">
+      <li class="pagination__item">
+        <a href="#" class="active">1</a>
+      </li>
+      <li class="pagination__item">
+        <a href="#">2</a>
+      </li>
+      <li class="pagination__item">
+        <a href="#">3</a>
+      </li>
+      <li class="pagination__item">
+        <a href="#" class="dots">...</a>
+      </li>
+      <li class="pagination__item">
+        <a href="#">10</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
     <script src="js/main.min.js"></script>
     <script src="js/vendor.min.js"></script>
   </body>
