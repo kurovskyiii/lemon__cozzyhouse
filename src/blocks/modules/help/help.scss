@@ -1,0 +1,60 @@
+.help {
+  background-color: #fafafa;
+  padding: 65px 0 0 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 68px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 20%;
+    text-align: center;
+    margin-bottom: 75px;
+
+    @include b(tablet) {
+      width: 25%;
+    }
+
+    @include b(mobile) {
+      width: 33.33%;
+    }
+
+    @include b(480) {
+      width: 50%;
+    }
+
+    &-icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 24px;
+
+      & svg {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
+
+    &-name {
+      letter-spacing: 1.2px;
+      font-size: 20px;
+
+      @include b(mobile) {
+        font-size: 18px;
+      }
+
+      @include b(480) {
+        font-size: 15px;
+      }
+    }
+  }
+}

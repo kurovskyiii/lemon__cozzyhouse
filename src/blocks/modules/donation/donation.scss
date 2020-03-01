@@ -1,5 +1,5 @@
 .donation {
-  background-color: #fafafa;
+  background-color: #f6f6f6;
   padding: 62px 0 80px;
 
   &__wrap {
@@ -71,8 +71,15 @@
       font-family: $second-font;
       font-size: 20px;
       background-color: $beige-text;
-      padding: 8px 14px;
+      padding: 6px 12px;
+      border: 2px solid $beige-text;
       border-radius: 10px;
+      color: $black-text;
+      @include trs;
+
+      &:hover {
+        background-color: transparent;
+      }
 
       @include b(mobile) {
         font-size: 14px;
