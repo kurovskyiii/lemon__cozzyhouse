@@ -1,0 +1,70 @@
+.pagination {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -8px;
+  }
+
+  &__item {
+    padding: 0 8px;
+    a {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid $beige-text;
+      font-size: 20px;
+      font-family: $second-font;
+      color: $black-text;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      @include b(480) {
+        width: 40px;
+        height: 40px;
+      }
+
+      &:hover {
+        background-color: $beige-text;
+      }
+
+      &.active {
+        background-color: $beige-text;
+        pointer-events: none;
+      }
+
+      &.dots {
+        border: none;
+        pointer-events: none;
+        color: $beige-text;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $beige-text;
+        font-size: 0;
+        margin: 0 9px;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: $beige-text;
+        }
+
+        &::before {
+          left: -9px;
+        }
+
+        &::after {
+          right: -9px;
+        }
+      }
+    }
+  }
+}

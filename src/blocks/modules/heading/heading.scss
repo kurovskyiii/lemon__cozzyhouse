@@ -38,7 +38,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include b(mobile) {
   .heading {
     background-position: 15% 50%;
 
@@ -52,14 +52,14 @@
   }
 }
 
-@media (max-width: 480px) {
+@include b(480) {
   .heading {
     &__caption {
       font-size: 28px;
     }
 
-    &__descr {
-      font-size: 14px;
+    &__btn {
+      width: 180px;
     }
   }
 }

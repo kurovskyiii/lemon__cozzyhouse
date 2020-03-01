@@ -1,0 +1,106 @@
+.donation {
+  background-color: #fafafa;
+  padding: 62px 0 80px;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+
+    @include b(mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__img,
+  &__info {
+    width: 50%;
+
+    @include b(mobile) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    text-align: center;
+
+    & img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+
+    @include b(mobile) {
+      margin-bottom: 30px;
+    }
+
+    @include b(mobile) {
+      &-inner {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__info {
+    @include b(mobile) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__lable {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+
+  &__card {
+    display: flex;
+    margin-bottom: 28px;
+
+    @include b(mobile) {
+      justify-content: center;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      font-family: $second-font;
+      font-size: 20px;
+      background-color: $beige-text;
+      padding: 8px 14px;
+      border-radius: 10px;
+
+      @include b(mobile) {
+        font-size: 14px;
+      }
+
+      & svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+
+        @include b(mobile) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  &__descr {
+    font-family: $second-font;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.5;
+    color: #b2b2b2;
+    width: 60%;
+
+    @include b(mobile) {
+      width: 100%;
+    }
+  }
+}
