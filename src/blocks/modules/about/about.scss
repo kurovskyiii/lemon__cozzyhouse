@@ -44,7 +44,7 @@
 
   &__info {
     &-inner {
-      width: 80%;
+      width: 75%;
 
       @include b(mobile) {
         width: 100%;
@@ -63,5 +63,9 @@
   &__descr {
     font-family: $second-font;
     color: $grey-text;
+
+    &:nth-child(1) {
+      margin-bottom: 24px;
+    }
   }
 }

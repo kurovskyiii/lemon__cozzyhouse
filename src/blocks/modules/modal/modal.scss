@@ -35,10 +35,13 @@
   }
 
   &__wrap {
-    max-width: 1028px;
+    width: 1028px;
+    max-width: 100%;
     padding: 58px 58px 0 0;
-    position: relative;
-    margin-bottom: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 100%;
     display: flex;
     align-items: center;
@@ -101,6 +104,9 @@
   }
 
   &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 55%;
     padding-left: 30px;
 
@@ -130,6 +136,7 @@
   }
 
   &__item {
+    display: block;
     position: relative;
     font-size: 17px;
     padding-left: 12px;
@@ -138,7 +145,7 @@
       content: '';
       position: absolute;
       left: 0;
-      top: 7px;
+      top: 10px;
       width: 4px;
       height: 4px;
       border-radius: 50%;

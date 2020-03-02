@@ -2,6 +2,12 @@
   padding-top: 55px;
   height: 120px;
 
+  &--white-bg {
+    background-color: #fafafa;
+    padding-top: 25px;
+    height: 110px;
+  }
+
   @include b(mobile) {
     padding-top: 15px;
     height: 80px;
@@ -24,7 +30,7 @@
 
       & span {
         height: 2px;
-        background-color: #ffffff;
+        background-color: $black-text;
         width: 100%;
         border-radius: 2px;
         position: absolute;
@@ -42,6 +48,8 @@
 
         @include b(mobile) {
           .active & {
+            background-color: #ffffff;
+
             &:nth-child(1) {
               top: 6px;
               transform: rotate(-45deg);
@@ -72,6 +80,10 @@
     letter-spacing: 1.8px;
     line-height: normal;
 
+    .header--white-bg & {
+      color: $black-text;
+    }
+
     @include b(mobile) {
       font-size: 24px;
     }
@@ -86,6 +98,10 @@
     line-height: normal;
     margin-top: 5px;
     margin-left: 2px;
+
+    .header--white-bg & {
+      color: $black-text;
+    }
 
     @include b(mobile) {
       font-size: 10px;
@@ -104,6 +120,7 @@
       justify-content: center;
       flex-direction: column;
       background-color: #000000;
+      z-index: 999;
 
       .active & {
         display: flex;
@@ -156,8 +173,16 @@
         letter-spacing: -0.15px;
         position: relative;
 
+        .header--white-bg & {
+          color: $black-text;
+        }
+
         @include b(mobile) {
           font-size: 18px;
+
+          .header--white-bg & {
+            color: #ffffff;
+          }
         }
 
         &::after {
@@ -174,6 +199,16 @@
         &:hover {
           color: #ffffff;
 
+          .header--white-bg & {
+            color: $black-text;
+          }
+
+          @include b(mobile) {
+            .header--white-bg & {
+              color: #ffffff;
+            }
+          }
+
           &::after {
             content: '';
             width: 100%;
@@ -185,6 +220,16 @@
         color: #ffffff;
         position: relative;
         transition: 0.2s;
+
+        .header--white-bg & {
+          color: $black-text;
+        }
+
+        @include b(mobile) {
+          .header--white-bg & {
+            color: #ffffff;
+          }
+        }
 
         &::after {
           content: '';

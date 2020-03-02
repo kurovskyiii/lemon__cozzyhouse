@@ -4,7 +4,16 @@
 
   &__title {
     text-align: center;
-    margin-bottom: 68px;
+    width: 40%;
+    margin: 0 auto 68px;
+
+    @include b(mobile) {
+      width: 70%;
+    }
+
+    @include b(480) {
+      width: 100%;
+    }
   }
 
   &__inner {
